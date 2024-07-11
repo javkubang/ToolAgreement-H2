@@ -6,7 +6,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.avee.h2.api.model.Toole;
 
-public interface TooleRepository extends JpaRepository<Toole, Integer> {
+public interface TooleRepository extends JpaRepository<Toole, String> {
 
 	List<Toole> findByBrand(String brand);
 
