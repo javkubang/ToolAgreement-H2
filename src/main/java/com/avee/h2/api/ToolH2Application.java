@@ -1,13 +1,8 @@
 package com.avee.h2.api;
 
 import com.avee.h2.api.dao.TooleRepository;
-import com.avee.h2.api.model.Toole;
-import org.springframework.boot.SpringApplication;
+import com.avee.h2.api.model.Tool;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 
@@ -18,11 +13,10 @@ public class TooleH2Application {
 
 	public static void main(String[] args) {
     //SpringApplication.run(TooleH2Application.class, args);
-
     TooleRepository tooleRepository;
 
 
-    Toole chainsaw = new Toole();
+    Tool chainsaw = new Tool();
     chainsaw.setCode("CHNS");
     chainsaw.setType("Chainsaw");
     chainsaw.setBrand("Stihl");
@@ -30,7 +24,7 @@ public class TooleH2Application {
     chainsaw.setChargeOnWeekends(false);
     chainsaw.setChargeOnHolidays(true);
 
-    Toole ladder = new Toole();
+    Tool ladder = new Tool();
     ladder.setCode("LADW");
     ladder.setType("Ladder");
     ladder.setBrand("Werner");
@@ -38,7 +32,7 @@ public class TooleH2Application {
     ladder.setChargeOnWeekends(true);
     ladder.setChargeOnHolidays(false);
 
-    Toole jackhammerD = new Toole();
+    Tool jackhammerD = new Tool();
     jackhammerD.setCode("JAKD");
     jackhammerD.setType("Jackhammer");
     jackhammerD.setBrand("DeWalt");
@@ -46,7 +40,7 @@ public class TooleH2Application {
     jackhammerD.setChargeOnWeekends(false);
     jackhammerD.setChargeOnHolidays(false);
 
-    Toole jackhammerR = new Toole();
+    Tool jackhammerR = new Tool();
     jackhammerR.setCode("JAKR");
     jackhammerR.setType("Jackhammer");
     jackhammerR.setBrand("Ridgid");
